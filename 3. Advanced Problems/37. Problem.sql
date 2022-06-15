@@ -7,3 +7,10 @@
 SELECT		TOP 2 PERCENT 
 			O.OrderID, O.EmployeeID, O.CustomerID
 FROM		Orders O
+
+
+-- or
+SELECT		TOP 2 PERCENT
+			OrderID
+FROM		Orders
+ORDER BY	NEWID()
